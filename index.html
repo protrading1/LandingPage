@@ -1,5 +1,179 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="">
 
-{% include_relative themes/default/index.html %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>"The Superb" | ProTrading</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="http://pngwebicons.com/uploads/book/ico/book_icon6733.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <style>
+    .btn-danger {
+      color: #ffffff;
+      background-color: #ED3E3E;
+      border-color: #ED3E3E;
+    }
+
+    .btn-danger:hover,
+    .btn-danger:focus,
+    .btn-danger:active,
+    .btn-danger.active,
+    .open .dropdown-toggle.btn-danger {
+      color: #ffffff;
+      background-color: #D33737;
+      border-color: #ED3E3E;
+    }
+
+    .btn-danger:active,
+    .btn-danger.active,
+    .open .dropdown-toggle.btn-danger {
+      background-image: none;
+    }
+
+    .btn-danger.disabled,
+    .btn-danger[disabled],
+    fieldset[disabled] .btn-danger,
+    .btn-danger.disabled:hover,
+    .btn-danger[disabled]:hover,
+    fieldset[disabled] .btn-danger:hover,
+    .btn-danger.disabled:focus,
+    .btn-danger[disabled]:focus,
+    fieldset[disabled] .btn-danger:focus,
+    .btn-danger.disabled:active,
+    .btn-danger[disabled]:active,
+    fieldset[disabled] .btn-danger:active,
+    .btn-danger.disabled.active,
+    .btn-danger[disabled].active,
+    fieldset[disabled] .btn-danger.active {
+      background-color: #ED3E3E;
+      border-color: #ED3E3E;
+    }
+
+    .btn-danger .badge {
+      color: #ED3E3E;
+      background-color: #ffffff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <div class="trapezoidBg"></div>
+  <div class="modalSent">
+    <i class="fa fa-check-circle"></i>
+    <h1>Ready to go!</h1>
+    <h3>We will contact you as soon as possible</h3>
+    <span id="btnClose" class="fa fa-times" aria-hidden="true"></span>
+  </div>
+  <header class="heroHeader">
+  
+    <div class="eBookLogo">
+      
+    </div>
+    <h1>"THE SUPERB"</br>A Trading System That Actually Works</h1>
+    <h2> With this Trading System, you can analyze any type of market that is represented by charts, like: Forex, Stocks, Cryptocurrencies, indexes, futures, etc.</h2>
+  </header>
+  <section id="appear" class="callToAction">
+    <div class="ebookImg">
+      <img src="img/imac_ipad_fb.png">
+      <h2>why should i buy this eBook?</h2>
+      <p>Easy! this book gathers in 104 pages, the <strong>experience of more than 7 years</strong> in the financial markets. It contains a <strong>clear system</strong>, with <strong>examples in charts</strong> and the ability to invest in any market that has a chart.</p>
+      <br>
+      <p>In addition, <strong>you will be added to a private group</strong> where you can interact with more people who have read the book. You can send your art in graphics and with the help of the mentor (the author of the book) you will gradually improve as a <strong>professional trader</strong>.</p>
+      <br>
+      <p>But that's not all, by joining the group you will have <strong>free access to an expert advisor (Robot)</strong> to invest with our system.</p>
+      <ul>
+        <li onclick="window.open('http://facebook.com/protrading.page')" class="fa fa-facebook-square" style="color:#2E5077"></li>
+        <li onclick="window.open('http://instagram.com/_protrading')" class="fa fa-instagram" style="color:#2E5077"></li>
+        <li onclick="window.open('https://www.youtube.com/channel/UCewwPNePIKLW9keIDf7jfyA')" class="fa fa-youtube-square" style="color:#2E5077"></li>
+        <li onclick="window.open('https://www.amazon.com/Superb-Trading-System-Actually-Works-ebook/dp/B07JZKQT3X/ref=sr_1_1?s=books&ie=UTF8&qid=1542472651&sr=1-1&keywords=The+Superb+trading')" class="fa fa-amazon" style="color:#2E5077"></li>
+      </ul>
+    </div>
+    <div class="conversion">
+      <header>
+        <h2>Fill this form and get 15% OFF</h2>
+        <p><del>60usd</del><strong> Now for 51usd</strong></p>
+      </header>
+      <section>
+        <form action="" id="formConv" class="formGroup">
+          <label for="nome">Name*</label>
+          <input name="name" type="text" class="form-control" id="inputName" aria-describedby="nome" required="true">
+          <label for="nome">Email*</label>
+          <input name="email" type="email" class="form-control" id="inputEmail" aria-describedby="email" required="true">
+          <label for="nome">3 + 4 = ?*</label>
+          <input type="number" class="form-control" id="inputVerification" aria-describedby="survey" required="true">
+          <button type="submit" class="btn btn-danger" data-loading-text="<i class='fa fa-spinner fa-spin ' style='margin-right: 1px; font-size: 24px; line-height: 12px;'></i> ALMOST DONE!!!...">GET 15% OFF </button>
+          <p>Your information will not be used for SPAM purposes.</p>
+        </form>
+      </section>
+    </div>
+  </section>
+  <section id="features" class="features">
+    <h2>Some Topics Inside The Ebook:</h2>
+    <div class="featuresWrapper">
+      <div class="box">
+        <div class="icon b"></div>
+        <h2>Trading System</h2>
+        <p>This method applies principles of multiple schools within the technical analysis such as charting, volume-based trading, supply and demand, among others. For all the above, this system is based mainly on the behavior of the price.</p>
+      </div>
+      <div class="box">
+        <div class="icon a"></div>
+        <h2>Capital Management Plan</h2>
+        <p>Learn how to properly manage the money in your account using the trading system we teach.</p>
+        <p>Only risk the money necessary to achieve great returns.</p>
+      </div>
+      <div class="box">
+        <div class="icon c"></div>
+        <h2>Some Indicators</h2>
+        <p>Learn how to use some technical indicators as tools to support buying and selling decisions. </p>
+        <p>Also, learn how they complement each other in the trading system.</p>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testmonials">
+    <div class="testmonialWrapper">
+      <img src="" alt="" class="personAvatar">
+      <h4>J. Sebastián</h4>
+      <p>I'd just finished the ebook, It's really wonderful and very useful, every word is important. You're very professional.</p>
+    </div>
+  </section>
+  <footer>
+    <p class="footer"><b>Copyright © 2018 ProTrading</b></p>
+    <a href="https://t.me/protrading1" target="_blank">Best Free Signals In Telegram</a>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-66366043-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

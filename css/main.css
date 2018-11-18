@@ -1,0 +1,625 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#appear {
+  opacity: 0; }
+
+.trapezoidBg {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, rgba(59, 89, 152, 0.6), rgba(40, 59, 102, 0.8)), url("../img/herobg.jpg") center center/cover no-repeat fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%); }
+
+.heroHeader {
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 20px;
+  z-index: 1; }
+  .heroHeader h1 {
+    font: 3em Open Sans, sans-serif;
+    font-weight: bold;
+    line-height: 1em;
+    color: #fff;
+    text-align: center;
+    margin: 35px 0 10px; }
+  .heroHeader h2 {
+    font: 1.25em Open Sans, sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px; }
+
+.logo {
+  width: 200px; }
+
+.eBookLogo {
+  display: inline-block;
+  float: right;
+  color: #fff; }
+
+.modalSent {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 30px;
+  top: -40vw;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  background: rgba(223, 227, 238, 0.95);
+  z-index: 9999; }
+  .modalSent i {
+    font-size: 5em;
+    color: green; }
+  .modalSent h1 {
+    font: 3em Open Sans, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; }
+  .modalSent h3 {
+    font: 1.5em Open Sans, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; }
+  .modalSent p {
+    font: 1em Open Sans, sans-serif;
+    margin-top: 0.875em; }
+  .modalSent span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px;
+    font-size: 1.2em;
+    color: #8b9dc3;
+    cursor: pointer; }
+    .modalSent span:hover {
+      color: #3b5998; }
+
+.callToAction {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 960px; }
+
+.ebookImg {
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 49%; }
+  .ebookImg img {
+    width: auto;
+    margin: 0;
+    padding: 0; }
+  .ebookImg h2 {
+    font: 2.2em Open Sans, sans-serif;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #3b5998;
+    margin: 10px 0; }
+  .ebookImg p {
+    font: 1.4em Open Sans, sans-serif;
+    line-height: 1.4em;
+    font-weight: lighter; }
+  .ebookImg ul {
+    margin-top: 30px;
+    padding: 0; }
+  .ebookImg li {
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    font-size: 2.4em;
+    padding-right: 1em;
+    cursor: pointer; }
+    .ebookImg li:nth-child(0n+1) {
+      color: #3b5998; }
+    .ebookImg li:nth-child(0n+2) {
+      color: #00aced; }
+    .ebookImg li:nth-child(0n+3) {
+      color: #0077b5; }
+    .ebookImg li:nth-child(0n+4) {
+      color: #d34836; }
+    .ebookImg li:nth-last-child(0n+1) {
+      padding-right: 0; }
+
+.conversion {
+  width: 41%;
+  box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1); }
+  .conversion header {
+    background: #ED3E3E;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    padding: 30px 30px 20px; }
+    .conversion header h2 {
+      font: 20px Open Sans, sans-serif;
+      font-weight: bold;
+      color: #fff;
+      margin: 0 0 10px; }
+    .conversion header p {
+      font: 16px Open Sans, sans-serif;
+      line-height: 1.3em;
+      font-weight: lighter;
+      color: #fff;
+      padding: 0;
+      margin: 0; }
+
+.formGroup {
+  background: #dfe3ee;
+  padding: 15px 35px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 0; }
+  .formGroup label {
+    font-size: 1.12em;
+    margin-top: 10px; }
+  .formGroup input {
+    height: 2.3em;
+    font-size: 1.3em; }
+  .formGroup button {
+    width: 100%;
+    height: 56px;
+    margin: 30px 0; }
+  .formGroup p {
+    font: 12px Open Sans, sans-serif;
+    line-height: 1em;
+    padding: 0 0 5px; }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 960px;
+  height: 530px;
+  padding: 30px;*/
+  text-align: center; }
+  .features h2 {
+    font: 1.6em Open Sans, sans-serif; }
+
+.featuresWrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: 'a b c';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  top: 25px;
+  margin-top: 30px; }
+  .featuresWrapper .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    text-align: center; }
+    .featuresWrapper .box h2 {
+      font: 1.6em Open Sans, sans-serif;
+      margin: 0 0 30px; }
+    .featuresWrapper .box p {
+      font: 1em Open Sans, sans-serif;
+      font-weight: lighter;
+      line-height: 1.4em; }
+
+.icon {
+  width: 120px;
+  height: 120px;
+  background: #dfe3ee;
+  border-radius: 50%;
+  margin-bottom: 60px; }
+  .icon.a {
+    background: url("../img/features_icons.png") left center no-repeat, #dfe3ee; }
+  .icon.b {
+    background: url("../img/features_icons.png") center center no-repeat, #dfe3ee; }
+  .icon.c {
+    background: url("../img/features_icons.png") right center no-repeat, #dfe3ee; }
+
+.testmonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 960px;
+  height: 360px;
+  margin: 0 auto;
+  padding: 0 0 30px; }
+  .testmonials h2 {
+    font: 1.6em Open Sans, sans-serif;
+    margin: 0; }
+
+.testmonialWrapper {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  background: rgba(223, 227, 238, 0.4); }
+  .testmonialWrapper::before {
+    content: '\f10d';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font: 4em FontAwesome;
+    color: #dfe3ee; }
+  .testmonialWrapper::after {
+    content: '\f10e';
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    font: 4em FontAwesome;
+    color: #dfe3ee; }
+  .testmonialWrapper h4 {
+    font: 1.2em Open Sans, sans-serif;
+    font-weight: bold;
+    margin: 0 0 5px; }
+  .testmonialWrapper p {
+    font: 0.875em Open Sans, sans-serif;
+    line-height: 1.6em;
+    font-weight: lighter;
+    margin: 0; }
+  .testmonialWrapper .personAvatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 0;
+    background: url("../img/avatar.jpg") center center/cover no-repeat; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f4f4f4;
+  text-align: center; }
+  footer p {
+    font: 0.875em Open Sans, sans-serif;
+    font-weight: lighter;
+    color: #ccc; }
+  footer a {
+    padding: 0;
+    margin: 0;
+    font: 0.875em Open Sans, sans-serif;
+    cursor: pointer; }
+
+.sending {
+  background: #30cc03;
+  color: #fff !important; }
+  .sending:focus,
+  .sending :active {
+    outline: none !important;
+    cursor: default; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .heroHeader {
+    width: 100vw;
+    height: auto; }
+    .heroHeader h2 {
+      width: 60%;
+      margin: 0 auto; }
+  .callToAction {
+    flex-direction: column;
+    padding: 0 30px;
+    width: 100vw; }
+  .modalSent {
+    height: 300px;
+    padding: 50px 30px; }
+  .ebookImg {
+    width: 80vw;
+    padding: 30px; }
+  .conversion {
+    width: 80vw; }
+  .formGroup input {
+    height: 2.5em;
+    font-size: 1.5em; }
+  .features {
+    width: 100vw;
+    height: auto; }
+  .testmonials {
+    width: 80vw; } }
+
+@media (max-width: 480px) {
+  .heroHeader {
+    width: 100vw;
+    height: auto; }
+    .heroHeader h1 {
+      font: 2.8em Open Sans, sans-serif;
+      font-weight: bold;
+      line-height: 1em;
+      color: #fff;
+      text-align: center;
+      margin: 35px 0 10px; }
+    .heroHeader h2 {
+      font: 1em Open Sans, sans-serif;
+      font-weight: lighter;
+      line-height: 1.6em;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+      word-wrap: break-word; }
+  .callToAction {
+    flex-direction: column;
+    padding: 0 30px;
+    width: 100vw; }
+  .ebookImg {
+    width: 100vw;
+    padding: 30px; }
+    .ebookImg img {
+      width: 100%; }
+    .ebookImg h2,
+    .ebookImg p {
+      text-align: center;
+      word-wrap: normal; }
+  .conversion {
+    width: 100vw;
+    padding: 30px; }
+    .conversion header {
+      padding: 20px 20px 10px; }
+      .conversion header h2 {
+        font: 1.1em Open Sans, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 0 5px; }
+      .conversion header p {
+        font: 1em Open Sans, sans-serif;
+        line-height: 1.3em;
+        font-weight: lighter;
+        color: #fff;
+        padding: 0;
+        margin: 0; }
+  .formGroup {
+    padding: 15px; }
+    .formGroup input {
+      height: 2.5em;
+      font-size: 1.2em; }
+  .features {
+    width: 100vw;
+    height: auto; }
+  .testmonials {
+    width: 80vw; }
+  h2 {
+    text-align: center; }
+  .featuresWrapper {
+    grid-template-columns: 1fr; }
+    .featuresWrapper .box {
+      width: 80vw; }
+  .testmonials {
+    width: 80vw; }
+  .testmonialWrapper {
+    width: auto;
+    background: #f4f4f4; }
+    .testmonialWrapper::before {
+      top: -15px;
+      left: -15px; }
+    .testmonialWrapper::after {
+      bottom: -15px;
+      right: -15px; }
+    .testmonialWrapper h4 {
+      font: 1.1em Open Sans, sans-serif;
+      font-weight: bold;
+      margin: 20px 0 0 20px; }
+    .testmonialWrapper p {
+      margin-top: 30px; }
+  footer a {
+    margin-bottom: 30px; } }
+
+/* Large devices (large desktops, 1200px and up) */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:after,
+  *:before,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  blockquote,
+  pre {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  img,
+  tr {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  h2,
+  h3,
+  p {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+  .footer{
+    color:black;
+  }
