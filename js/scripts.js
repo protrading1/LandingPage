@@ -45,7 +45,7 @@ $(".btn").on('click', function() {
     $(".modalSent").hide();
     clearTimeout();
   });
-}
+
 
 $.ajax({
   dataType: 'jsonp',
@@ -59,7 +59,8 @@ $.ajax({
   //and reset the form
   //alert("Thank you, for contacting us");
 });
-});
+    }
+      });
 
 /////// FadeIn ////////
 $(window).load(function() {
