@@ -213,7 +213,7 @@ textarea {
 
 .conversion {
   margin-bottom: 460px;
-  height: 270px;
+  height: 300px;
   width: 41%;
   box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
@@ -621,10 +621,14 @@ footer {
   section#form{
     text-align: center;
     padding-top: 50px;
+  }
 
+  .paypal{
+    width: 100%;
+    padding: 0px 15px 0px 15px;
   }
 
   .note {
       font: 11px Open Sans, sans-serif;
       line-height: 1em;
-      padding: 10px 35px 5px 35px; }
+      padding: 0px 35px 5px 35px; }
