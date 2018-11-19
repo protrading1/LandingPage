@@ -237,25 +237,15 @@ textarea {
       margin: 0; }
 
 .formGroup {
-  background: #fff;
-  padding: 15px;
+  padding: 10px 35px 0px 35px; 
   margin-bottom: 0;
   text-align: justify;
    }
-  .formGroup label {
-    font-size: 1.12em;
-    margin-top: 10px; }
-  .formGroup input {
-    height: 2.3em;
-    font-size: 1.3em; }
-  .formGroup button {
-    width: 100%;
-    height: 56px;
-    margin: 30px 0; }
+ 
   .formGroup p {
-    font: 12px Open Sans, sans-serif;
+    font: 11px Open Sans, sans-serif;
     line-height: 1em;
-    padding: 0 0 5px; }
+    padding: 5px 5px 5px 5px; }
 
 .features {
   display: flex;
