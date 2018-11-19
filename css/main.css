@@ -460,6 +460,7 @@ footer {
     width: 80vw;
     padding: 30px; }
   .conversion {
+    margin-bottom: 0;
     width: 80vw; }
   .formGroup input {
     height: 2.5em;
@@ -503,6 +504,7 @@ footer {
       text-align: center;
       word-wrap: normal; }
   .conversion {
+    margin-bottom: 0;
     width: 100vw;
     padding: 30px; }
     .conversion header {
