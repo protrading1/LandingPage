@@ -636,3 +636,7 @@ footer {
       padding: 0px 15px 5px 15px;
       text-align: justify;
        }
+
+  .centerText{
+    text-align: center;
+  }
