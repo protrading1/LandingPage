@@ -100,19 +100,15 @@
     </div>
     <div class="conversion">
       <header>
-        <h2>Fill this form and get 25% OFF</h2>
+        <h2>Buy now and get 25% OFF</h2>
         <p><del>89usd</del><strong> Now for 67usd</strong></p>
       </header>
-      <section>
-        <form action="" id="formConv" class="formGroup">
-          <label for="nome">Name*</label>
-          <input name="name" type="text" class="form-control" id="inputName" aria-describedby="nome" required="true">
-          <label for="nome">Email*</label>
-          <input name="email" type="email" class="form-control" id="inputEmail" aria-describedby="email" required="true">
-          <label for="nome">3 + 4 = ?*</label>
-          <input type="number" class="form-control" id="inputVerification" aria-describedby="survey" required="true">
-          <button type="submit" class="btn btn-danger" data-loading-text="<i class='fa fa-spinner fa-spin ' style='margin-right: 1px; font-size: 24px; line-height: 12px;'></i> ALMOST DONE!!!...">GET 15% OFF </button>
-          <p>Your information will not be used for SPAM purposes.</p>
+      <section id="form">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="CFF78WHDXPTMU">
+        <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="paypal">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
       </section>
     </div>

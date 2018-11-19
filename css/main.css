@@ -212,9 +212,12 @@ textarea {
       padding-right: 0; }
 
 .conversion {
+  margin-bottom: 500px;
+  height: 250px;
   width: 41%;
   box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
+  }
   .conversion header {
     background: #ED3E3E;
     border-radius: 5px 5px 0 0;
@@ -622,4 +625,10 @@ footer {
 
   .footer{
     color:black;
+  }
+
+  section#form{
+    text-align: center;
+    padding-top: 50px;
+
   }
