@@ -12,40 +12,6 @@ jQuery.fn.extend({
 });
 //Ações do botão de download (manipulando estilos/estados do bootstrap):
 $(".btn").on('click', function() {
-  var a=document.forms["formConv"]["inputName"].value;
-  var b=document.forms["formConv"]["inputEmail"].value;
-  var c=document.forms["formConv"]["inputVerification"].value;
-  if (a!="" && b!="" && c==7 ){
-  var $this = $(this);
-  $this.button('loading');
-  setTimeout(function() {
-    $this.removeClass("btn btn-danger").addClass("btn btn-success");
-    $this.removeClass("disabled");
-    $this.disable(true);
-    $this.html('<i class="fa fa-check" style="font-size: 24px; position: relative; top: -10px; opacity: 0;">');
-    $("i").animate({
-      top: '+=10px',
-      opacity: 1
-    }, 200);
-    //Resetando o formulário:
-    $("#formConv")[0].reset();
-    //Abrindo modal de agradecimento:
-    $(".modalSent").delay(500).animate({
-      top: '+=40vw',
-      height: '300px',
-      opacity: 1
-    }, 450);
-    $(".modalSent").delay(8000).animate({
-      top: '-=40vw',
-      height: '0px',
-      opacity: 0
-    }, 650);
-  }, 3000);
-  $("#btnClose").on('click', function() {
-    $(".modalSent").hide();
-    clearTimeout();
-  });
-
 
 $.ajax({
   dataType: 'jsonp',
@@ -54,12 +20,7 @@ $.ajax({
     name: document.forms["formConv"]["inputName"].value ,
     email: document.forms["formConv"]["inputEmail"].value,
   }
-}).done(function() {
-  //callback which can be used to show a thank you message
-  //and reset the form
-  //alert("Thank you, for contacting us");
-});
-    }
+})
       });
 
 /////// FadeIn ////////
