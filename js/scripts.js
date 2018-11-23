@@ -1,16 +1,7 @@
-//Previne que o submit do form não recarregue a página:
 $("#formConv").submit(function(e) {
   e.preventDefault();
 });
-//Função para saber se o botão fica ou não como disabled no fim do evento:
-jQuery.fn.extend({
-  disable: function(state) {
-    return this.each(function() {
-      this.disabled = state;
-    });
-  }
-});
-//Ações do botão de download (manipulando estilos/estados do bootstrap):
+
 $(".btn").on('click', function() {
 
 $.ajax({
@@ -19,9 +10,11 @@ $.ajax({
   data: {
     name: document.forms["formConv"]["inputName"].value ,
     email: document.forms["formConv"]["inputEmail"].value,
-  }
+  },
+  success: window.location.href = 'index.html'
 })
       });
+
 
 /////// FadeIn ////////
 $(window).load(function() {
