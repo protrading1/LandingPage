@@ -9,12 +9,12 @@ $.ajax({
   url: "https://getsimpleform.com/messages/ajax?form_api_token=10d0d55f1194da93f6d9b52b62e1eca2",
   data: {
     name: document.forms["formConv"]["inputName"].value ,
-    email: document.forms["formConv"]["inputEmail"].value,
-  },
-  success: window.location.href = 'index.html'
+    email: document.forms["formConv"]["inputEmail"].value
+  }
+  }).done(function() {
+    window.location.href = 'index.html';
 })
-      });
-
+});
 
 /////// FadeIn ////////
 $(window).load(function() {
