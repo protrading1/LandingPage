@@ -625,11 +625,6 @@ footer {
     padding-top: 50px;
   }
 
-  .paypal{
-    width: 100%;
-    padding: 0px 15px 0px 15px;
-  }
-
   .note {
       font: 12px Open Sans, sans-serif;
       line-height: 1.5em;
@@ -639,4 +634,10 @@ footer {
 
   .centerText{
     text-align: center;
+  }
+
+  .paypal-button{
+    margin-top: 0;
+    width: 50%;
+  
   }
