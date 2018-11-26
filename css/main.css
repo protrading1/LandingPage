@@ -212,7 +212,7 @@ textarea {
       padding-right: 0; }
 
 .conversion {
-  margin-bottom: 460px;
+  margin-bottom: 420px;
   height: 330px;
   width: 41%;
   box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.1);
@@ -444,7 +444,7 @@ footer {
 
 @media (max-width: 768px) and (min-width: 481px) {
   .btn-primary{
-    font: 1em Open Sans, sans-serif;
+    font: 0.3em Open Sans, sans-serif;
     white-space: normal;
     word-wrap: break-word;
     width: 100%;
@@ -480,7 +480,7 @@ footer {
 
 @media (max-width: 480px) {
   .btn-primary{
-    font: 1em Open Sans, sans-serif;
+    font: 0.3em Open Sans, sans-serif;
     white-space: normal;
     word-wrap: break-word;
     width: 100%;
@@ -657,9 +657,10 @@ footer {
   }
 
   .btn-primary{
-    font: 20px Open Sans, sans-serif;
+    font: 15px Open Sans, sans-serif;
     margin-top: 30px;
     color:white;
+    opacity: 0.9;
     background: #002B4F;
     border-color: #15DB29;
     border-width: 0.1em;
