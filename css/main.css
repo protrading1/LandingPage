@@ -641,3 +641,17 @@ footer {
     width: 50%;
   
   }
+
+  .btn-primary{
+    font: 20px Open Sans, sans-serif;
+    margin-top: 30px;
+    color:white;
+    background: #002B4F;
+    border-color: #15DB29;
+    border-width: 0.1em;
+  }
+
+   .btn-primary:hover{
+    color:white;
+    border-color: #15DB29;
+  }
