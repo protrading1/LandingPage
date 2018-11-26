@@ -83,6 +83,7 @@ textarea {
 
 .trapezoidBg {
   position: absolute;
+  opacity: 1;
   width: 100%;
   height: 500px;
   background: linear-gradient(90deg, rgba(59, 89, 152, 0.6), rgba(40, 59, 102, 0.8)), url("../img/best-ebook-trading-amazon.jpg") center center/cover no-repeat fixed;
