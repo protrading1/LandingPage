@@ -443,6 +443,13 @@ footer {
   clear: both; }
 
 @media (max-width: 768px) and (min-width: 481px) {
+  .btn-primary{
+    font: 1em Open Sans, sans-serif;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+
+  }
   .heroHeader {
     width: 100vw;
     height: auto; }
@@ -472,6 +479,13 @@ footer {
     width: 80vw; } }
 
 @media (max-width: 480px) {
+  .btn-primary{
+    font: 1em Open Sans, sans-serif;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+
+  }
   .heroHeader {
     width: 100vw;
     height: auto; }
