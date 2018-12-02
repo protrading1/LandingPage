@@ -468,7 +468,8 @@ footer {
     width: 80vw;
     padding: 30px; }
   .conversion {
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    height: 380px;
     width: 80vw; }
   .formGroup input {
     height: 2.5em;
