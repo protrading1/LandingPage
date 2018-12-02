@@ -480,6 +480,7 @@ footer {
     width: 80vw; } }
 
 @media (max-width: 480px) {
+
   .btn-primary{
     font: 0.3em Open Sans, sans-serif;
     white-space: normal;
@@ -521,7 +522,13 @@ footer {
   .conversion {
     margin-bottom: 0;
     width: 100vw;
-    padding: 30px; }
+    padding: 30px;
+    }
+    .conversion p{
+      font-size: 0.6em;
+    }
+
+
     .conversion header {
       padding: 20px 20px 10px; }
       .conversion header h2 {
